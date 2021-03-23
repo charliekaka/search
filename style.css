@@ -1,0 +1,50 @@
+body{
+    font-family: "Times New Roman", Times, serif;
+    background-color: lightgray;
+}
+
+.header {
+    background-color: lightgray;
+    text-align: center;
+    height: 7%;
+  }
+
+  .main {
+    background-color: white;
+    text-align: center;
+    height: 86%;
+  }
+
+  .footer {
+    background-color: lightgray;
+    text-align: center;
+    height: 7%;
+  }
+
+  .searchBox{
+      position: relative;
+      background-color: lightgray;
+      width:40%;
+      height:40%;
+      margin-left: auto;
+      margin-right: auto;
+      top:30%;
+  }
+
+.searchHead, .searchfield, .searchButton{
+    position: relative;
+    top:10%;
+}
+
+  .searchHead{
+    font-size:2rem;
+  }
+
+  .searchField{
+      width:70%;
+      height:10%;
+  }
+
+  .searchButton{
+      height:10%;
+  }
