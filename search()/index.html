@@ -1,0 +1,62 @@
+<html>
+<!--Länkar css-->
+<link rel="stylesheet" href="style.css">
+<!--Länkar js-->
+<script src='script.js'></script>
+    <head>
+        <!--Hjälper att justera sidan efter anv skärm-->
+        <meta name="viewport" content="width=device-width">
+        <!--sätter fliknamnet till "home"-->
+        <title>Home</title>
+    </head>
+    <body>
+
+<!--översidan av hemsidan-->
+<div class='header'>
+    <!--hemsidans logga-->
+    <img class="logo" src="logo.png">
+</div>
+
+<!--yttersta sökrutan element-->
+<div class='main'>
+    <div class='searchBox'>
+        <div class= 'searchHead'>
+            Search
+        </div>
+        <!--sökruta-->
+        <div class='search'>
+            <!--FORM krävs för att den ska acceptera ENTER som Submit-->
+            <form>
+            <!--input fältet-->
+            <input type='text' class='searchField' id='search' placeholder="  Search!">
+            <!--sök knappen-->
+            <input type='submit' value='Search' class='searchButton' onclick='Submit()'>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--undersidan av hemsidan-->
+<div class='footer'>
+    <div class='footer_background'>
+        <h4 class='footer_childTOS'>
+            <a href='#'>
+                Terms of use
+            </a>
+        </h4>
+        <h4 class='footer_childPP'>
+            <a href='#'>
+            Privacy policy
+        </a>
+        </h4>
+        <h4 class='footer_child_TEXT'>
+            stuff
+        </h4>
+    </div>
+    <h4 class='footer_CR'>
+        Copyright @2021
+    </h4>
+</div>
+
+    </body>
+</html>
