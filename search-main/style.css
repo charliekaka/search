@@ -1,0 +1,223 @@
+:root{
+  --white:lightgray;
+  --whitedim:white;
+  --black_text:black;
+  --box_Shadow: #7c7c7c;
+}
+
+body{
+    font-family: "Times New Roman", Times, serif;
+    background-color: var(--white);
+    color:var(--black_text);
+    /* tar bort den yttersta ramen som finns där annars */
+    margin:0;
+}
+
+/*översta delen av hemsidan*/
+.header {
+    background-color: var(--white);
+    height: 10%;
+  }
+
+.logo,
+.logoDM {
+    position:absolute;
+    width:12%;
+    height:11%;
+  }
+  .logo{
+    display:block;
+  }
+  .logoDM{
+    /*gör så vi kan ändra i js*/
+    display:none;
+  }
+
+  /*underdelen av hemsidan*/
+  .footer {
+    background-color: var(--white);
+    height: 10%;
+  }
+
+  /*backgrund för länkar*/
+  .footer_background{
+    position:relative;
+    background-color: var(--white);
+    width:30%;
+    height:100%;
+    left:35%;
+  }
+
+  /*tos och pp länkar*/
+  .footer_child_TEXT, 
+  .footer_childPP,
+  .footer_childTOS{
+    position:absolute;
+    font-size:18px;
+    bottom:0;
+    top:0;
+  }
+  .footer_child_TEXT{
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+    right:50%;
+    left:45%;
+  }
+  .footer_childPP{
+    right:15%;
+    top:20;
+  }
+  .footer_childTOS{
+    left:18%;
+    top:20;
+  }
+
+  /*för copyright saken*/
+  .footer_CR{
+    position: absolute;
+    font-size:1em;
+    right:2%;
+    bottom:0;
+  }
+
+  /*background*/
+  .main {
+    background-color: var(--whitedim);
+    text-align: center;
+    height: 80%;
+  }
+
+  .SearchText{
+    font-size:3vw;
+
+  }
+/*sätter sökrutan på plats*/
+  .searchBox{
+      position: absolute;
+      background-color: var(--white);
+      border-radius: .1in;
+      width:50%;
+      height:50%;
+      right:25%;
+      top:25%;
+      box-shadow: 6px 6px var(--box_Shadow);
+  }
+
+  /*enklare att justera något som är relative inuti
+  något som är absolute*/
+.searchfield,
+.searchButton{
+    position: relative;
+}
+
+  /*sökfältet*/
+  .searchField{
+      width:70%;
+      height:10%;
+      border-radius: .9em;
+      border:none;
+  }
+
+  .borderSearch{
+    position: relative;
+    top:25;
+  }
+  
+  /*sök bild*/
+.searchBild{
+  position: absolute;
+  width:30px;
+  height:30px;
+  left:80%;
+  top:10%;
+  object-fit: cover;
+}
+
+.displayNone{
+  display:none;
+}
+
+/*dark mode outline*/
+.switchBox{
+  position: relative;
+  width:15%;
+  height:50%;
+  left:80%;
+  top:30%;
+}
+
+/*texten runt slidern*/
+.LightText,
+.DarkText{
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  bottom:15%;
+}
+.DarkText{
+  right:0;
+}
+
+  /*  switch snodd från w3 */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left:37%;
+ 
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(68, 68, 68);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

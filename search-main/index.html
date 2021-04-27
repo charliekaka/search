@@ -1,0 +1,73 @@
+<html>
+<!--Länkar css-->
+<link rel="stylesheet" href="style.css">
+<!--Länkar js-->
+<script src='script.js'></script>
+    <head>
+        <!--Hjälper att justera sidan efter anv skärm-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--sätter fliknamnet till "home"-->
+        <title>Home</title>
+    </head>
+    <body>
+
+<!--översidan av hemsidan-->
+<div class='header'>
+    <!--hemsidans logga-->
+    <img class="logo" src="logo.png" id="light_logo">
+    <img class="logoDM" src="logodm.png" id=dark_logo>
+
+    <div class='switchBox'>
+        <h3 class='LightText'>Light</h3>
+    <label class="switch">
+        <input type="checkbox" onclick='Darkmode()'>
+        <span class="slider round"></span>
+      </label>
+      <h3 class='darkText'>Dark</h3>
+    </div>
+</div>
+
+<!--yttersta sökrutan element-->
+<div class='main'>
+    <div class='searchBox'>
+        <br><br>
+        <h1 class="SearchText">Search</h1>
+        <!--sökruta-->
+        <div class='search'>
+            <!--FORM krävs för att den ska acceptera ENTER som Submit-->
+            <form class="borderSearch">
+            <!--input fältet-->
+            <input type='search' class='searchField' id='search' placeholder="   Search!">
+            <!--sök med enter-->
+            <input type="submit" class="displayNone" onclick='Submit()'>
+             <!--sök knappen-->
+            <img src="search.png" class="searchBild" type='submit' onclick='Submit()'>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--undersidan av hemsidan-->
+<div class='footer'>
+    <div class='footer_background'>
+        <h4 class='footer_childTOS'>
+            <a href='https://github.com/charliekaka/search'>
+                Github
+            </a>
+        </h4>
+        <h4 class='footer_childPP'>
+            <a href='#'>
+            Privacy policy
+        </a>
+        </h4>
+        <h4 class='footer_child_TEXT'>
+            stuff
+        </h4>
+    </div>
+    <h4 class='footer_CR'>
+        Copyright @2021
+    </h4>
+</div>
+
+    </body>
+</html>
